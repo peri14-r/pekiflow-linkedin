@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pekiflow — LinkedIn Content Automation Dashboard for AI Agency. Create, manage, and schedule LinkedIn posts about AI automation for coaches.">
+  <title>Pekiflow — LinkedIn Content Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+
+  <div class="app-container">
+
+    <!-- ═══════ SIDEBAR ═══════ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a class="brand" href="#">
+          <div class="brand-icon">P</div>
+          <div class="brand-text">
+            <h1>Pekiflow</h1>
+            <span>AI Agency</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main</div>
+        <div class="nav-item active" data-page="dashboard">
+          <i>📊</i>
+          <span>Dashboard</span>
+        </div>
+        <div class="nav-item" data-page="library">
+          <i>📚</i>
+          <span>Post Library</span>
+          <span class="nav-badge">20</span>
+        </div>
+        <div class="nav-item" data-page="create">
+          <i>✍️</i>
+          <span>Create Post</span>
+        </div>
+
+        <div class="nav-label">Plan</div>
+        <div class="nav-item" data-page="calendar">
+          <i>📅</i>
+          <span>Content Calendar</span>
+        </div>
+        <div class="nav-item" data-page="hashtags">
+          <i>#️⃣</i>
+          <span>Hashtag Manager</span>
+        </div>
+
+        <div class="nav-label">Leads</div>
+        <div class="nav-item" data-page="outreach">
+          <i>✉️</i>
+          <span>Outreach Hub</span>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <div class="user-avatar">PF</div>
+          <div class="user-details">
+            <h4>Pekiflow</h4>
+            <span>AI Automation Agency</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ═══════ MAIN CONTENT ═══════ -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <button class="mobile-menu-btn" id="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+          <h2 id="page-title">📊 Dashboard</h2>
+        </div>
+        <div class="header-right">
+          <button class="btn-primary" onclick="switchPage('create')">
+            <i>✨</i> New Post
+          </button>
+        </div>
+      </header>
+
+      <!-- ═══════ DASHBOARD PAGE ═══════ -->
+      <div class="page-container active" id="dashboard">
+        <!-- Welcome Banner -->
+        <div class="welcome-banner" style="display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 280px;">
+            <h2>Welcome to <span>Pekiflow</span> 🚀</h2>
+            <p>Your LinkedIn content command center. Create, manage, and schedule posts about AI automation for coaches. Build your personal brand and grow your AI agency.</p>
+          </div>
+          <div style="width: 220px; height: 115px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glow); flex-shrink: 0; box-shadow: var(--shadow-glow);">
+            <img src="assets/pekiflow_hero.png" alt="Pekiflow AI Brand" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon cyan">📝</div>
+            <div class="stat-value" id="stat-total-posts">20</div>
+            <div class="stat-label">Ready-to-Post Content</div>
+            <div class="stat-trend up">⬆ Pre-written & optimized</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon purple">💾</div>
+            <div class="stat-value" id="stat-saved">0</div>
+            <div class="stat-label">Saved Drafts</div>
+            <div class="stat-trend up">⬆ Your custom posts</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon green">📋</div>
+            <div class="stat-value" id="stat-copied">0</div>
+            <div class="stat-label">Posts Copied</div>
+            <div class="stat-trend up">⬆ Ready to paste on LinkedIn</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon orange">🗂️</div>
+            <div class="stat-value" id="stat-categories">9</div>
+            <div class="stat-label">Post Categories</div>
+            <div class="stat-trend up">⬆ Diverse content mix</div>
+          </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+          <!-- Quick Actions -->
+          <div class="section-card">
+            <div class="section-header">
+              <h3>⚡ Quick Actions</h3>
+            </div>
+            <div class="section-body">
+              <div class="quick-actions">
+                <div class="quick-action" onclick="switchPage('library')">
+                  <i>📚</i>
+                  <span>Browse Post Library</span>
+                </div>
+                <div class="quick-action" onclick="switchPage('create')">
+                  <i>✍️</i>
+                  <span>Create New Post</span>
+                </div>
+                <div class="quick-action" onclick="switchPage('calendar')">
+                  <i>📅</i>
+                  <span>View Calendar</span>
+                </div>
+                <div class="quick-action" onclick="switchPage('hashtags')">
+                  <i>#️⃣</i>
+                  <span>Copy Hashtags</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekly Schedule -->
+          <div class="section-card">
+            <div class="section-header">
+              <h3>📅 This Week's Plan</h3>
+            </div>
+            <div class="section-body" id="upcoming-schedule">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════ POST LIBRARY PAGE ═══════ -->
+      <div class="page-container" id="library">
+        <!-- Controls -->
+        <div class="library-controls" style="display: flex; flex-direction: column; gap: 16px; align-items: stretch; margin-bottom: 20px;">
+          <div style="display: flex; gap: 8px; border-bottom: 1px solid var(--border-glass); padding-bottom: 12px; flex-wrap: wrap;">
+            <button class="filter-chip active" id="btn-target-all" onclick="switchTargetFeed('all', this)">🌐 All Feeds</button>
+            <button class="filter-chip" id="btn-target-personal" onclick="switchTargetFeed('personal', this)">👤 Personal Feed (Thought Leader)</button>
+            <button class="filter-chip" id="btn-target-company" onclick="switchTargetFeed('company', this)">🏢 Pekiflow Page (Direct Pitch)</button>
+          </div>
+          <div class="search-box">
+            <i>🔍</i>
+            <input type="text" id="search-posts" placeholder="Search posts by keyword, topic, or tag...">
+          </div>
+        </div>
+        <div class="filter-chips" id="filter-chips">
+          <!-- Filled by JS -->
+        </div>
+        <div style="height: 10px;"></div>
+
+        <!-- Posts Grid -->
+        <div class="posts-grid" id="posts-grid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+
+      <!-- ═══════ CREATE POST PAGE ═══════ -->
+      <div class="page-container" id="create">
+        <!-- Template Selector -->
+        <div class="section-card" style="margin-bottom: 24px;">
+          <div class="section-header">
+            <h3>🎨 Choose a Template</h3>
+            <span style="font-size: 13px; color: var(--text-muted);">Click to load a random post from category</span>
+          </div>
+          <div class="section-body">
+            <div class="template-grid" id="template-grid">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Editor & Preview -->
+        <div class="create-layout">
+          <!-- Editor -->
+          <div class="editor-panel">
+            <div class="panel-header">
+              <h3>✏️ Editor</h3>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn-secondary" onclick="clearEditor()">🗑️ Clear</button>
+                <button class="btn-secondary" onclick="savePost()">💾 Save</button>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="form-group">
+                <label>Post Category</label>
+                <select id="post-category-select">
+                  <option value="hook">⚡ Hook Post</option>
+                  <option value="value">💎 Value Post</option>
+                  <option value="story">📖 Story Post</option>
+                  <option value="authority">👑 Authority Post</option>
+                  <option value="engagement">💬 Engagement Post</option>
+                  <option value="educational">🎓 Educational Post</option>
+                  <option value="social-proof">🏆 Social Proof</option>
+                  <option value="trends">📡 Trend Post</option>
+                  <option value="cta">🎯 CTA Post</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Post Content</label>
+                <textarea id="post-editor" placeholder="Write your LinkedIn post here... &#10;&#10;Tips:&#10;→ Start with a bold hook&#10;→ Use line breaks for readability&#10;→ End with a clear CTA&#10;→ Add relevant hashtags"></textarea>
+                <div class="char-count" id="char-count">0 / 3000 characters</div>
+              </div>
+              <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="copyEditorContent()">
+                📋 Copy to Clipboard
+              </button>
+            </div>
+          </div>
+
+          <!-- Preview -->
+          <div class="preview-panel">
+            <div class="panel-header">
+              <h3>👁️ LinkedIn Preview</h3>
+            </div>
+            <div class="panel-body">
+              <div class="linkedin-preview">
+                <div class="preview-header-li">
+                  <div class="preview-avatar">PF</div>
+                  <div class="preview-user-info">
+                    <h4>Pekiflow</h4>
+                    <p>AI Automation for Coaches | Founder @ Pekiflow</p>
+                    <p style="font-size: 11px; color: var(--text-muted);">Just now · 🌐</p>
+                  </div>
+                </div>
+                <div class="preview-content" id="live-preview-content">Start typing your post...</div>
+                <div class="preview-engagement">
+                  <span>👍 Like</span>
+                  <span>💬 Comment</span>
+                  <span>🔄 Repost</span>
+                  <span>📤 Send</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════ CALENDAR PAGE ═══════ -->
+      <div class="page-container" id="calendar">
+        <div class="calendar-header-bar">
+          <div class="calendar-nav">
+            <button class="calendar-nav-btn" onclick="prevMonth()">◀</button>
+            <h3 id="calendar-month-label">June 2026</h3>
+            <button class="calendar-nav-btn" onclick="nextMonth()">▶</button>
+          </div>
+        </div>
+
+        <div class="section-card" style="margin-bottom: 24px;">
+          <div class="section-header">
+            <h3>📋 Recommended Weekly Posting Schedule</h3>
+          </div>
+          <div class="section-body" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px;">
+            <div class="quick-action" style="text-align: left; cursor: default;">
+              <strong style="color: var(--accent-cyan); font-size: 12px;">MONDAY</strong><br>
+              <span>💎 Value Post</span>
+            </div>
+            <div class="quick-action" style="text-align: left; cursor: default;">
+              <strong style="color: var(--accent-purple); font-size: 12px;">TUESDAY</strong><br>
+              <span>📖 Story Post</span>
+            </div>
+            <div class="quick-action" style="text-align: left; cursor: default;">
+              <strong style="color: var(--accent-green); font-size: 12px;">WEDNESDAY</strong><br>
+              <span>🎓 Educational</span>
+            </div>
+            <div class="quick-action" style="text-align: left; cursor: default;">
+              <strong style="color: var(--accent-orange); font-size: 12px;">THURSDAY</strong><br>
+              <span>💬 Engagement</span>
+            </div>
+            <div class="quick-action" style="text-align: left; cursor: default;">
+              <strong style="color: var(--accent-pink); font-size: 12px;">FRIDAY</strong><br>
+              <span>⚡ Hook Post</span>
+            </div>
+            <div class="quick-action" style="text-align: left; cursor: default;">
+              <strong style="color: var(--accent-cyan); font-size: 12px;">SATURDAY</strong><br>
+              <span>👑 Authority</span>
+            </div>
+            <div class="quick-action" style="text-align: left; cursor: default;">
+              <strong style="color: var(--accent-red); font-size: 12px;">SUNDAY</strong><br>
+              <span>🎯 CTA Post</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-grid" id="calendar-grid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+
+      <!-- ═══════ HASHTAGS PAGE ═══════ -->
+      <div class="page-container" id="hashtags">
+        <div class="welcome-banner" style="margin-bottom: 24px;">
+          <h2>Hashtag <span>Manager</span> #️⃣</h2>
+          <p>Curated hashtag sets for maximum LinkedIn reach. Click "Copy All" to copy a set, then paste into your post.</p>
+        </div>
+
+        <div class="hashtag-sets" id="hashtag-sets-grid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+
+      <!-- ═══════ OUTREACH HUB PAGE ═══════ -->
+      <div class="page-container" id="outreach">
+        <div class="welcome-banner" style="margin-bottom: 24px;">
+          <h2>Outreach <span>Hub</span> ✉️</h2>
+          <p>Launch campaigns, copy proven sequence templates, and track your active coaching leads safely in your local CRM database.</p>
+        </div>
+
+        <div class="crm-layout">
+          <!-- Left Panel: Template Manager -->
+          <div class="editor-panel">
+            <div class="panel-header">
+              <h3>📋 Campaign Sequences</h3>
+              <div style="display: flex; gap: 8px;">
+                <button class="filter-chip active" id="btn-seq-linkedin" onclick="switchOutreachType('linkedin', this)">👤 LinkedIn DM</button>
+                <button class="filter-chip" id="btn-seq-email" onclick="switchOutreachType('email', this)">📧 Cold Email</button>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="outreach-steps-list" id="outreach-steps-container">
+                <!-- Filled by JS -->
+              </div>
+              <div class="form-group">
+                <label id="outreach-template-label">Template Content</label>
+                <textarea id="outreach-template-text" style="min-height: 220px;" readonly></textarea>
+              </div>
+              <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="copyOutreachTemplate()">
+                📋 Copy Sequence Step
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Panel: Leads CRM -->
+          <div class="preview-panel">
+            <div class="panel-header">
+              <h3>👥 Leads CRM Tracker</h3>
+            </div>
+            <div class="panel-body" style="padding: 20px;">
+              <!-- Add Lead Form -->
+              <form id="add-lead-form" onsubmit="handleAddLead(event)" style="display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 10px; align-items: end; margin-bottom: 20px; border-bottom: 1px solid var(--border-glass); padding-bottom: 20px;">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label style="font-size: 11px;">Lead Name</label>
+                  <input type="text" id="lead-name" placeholder="Coach Name" required>
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label style="font-size: 11px;">Niche</label>
+                  <select id="lead-niche" style="padding: 11px 10px;">
+                    <option value="Mindset Coach">Mindset Coach</option>
+                    <option value="Business Coach">Business Coach</option>
+                    <option value="Life Coach">Life Coach</option>
+                    <option value="Executive Coach">Executive Coach</option>
+                    <option value="Health/Fitness Coach">Health/Fitness Coach</option>
+                  </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label style="font-size: 11px;">Contact (Email / LI Link)</label>
+                  <input type="text" id="lead-contact" placeholder="Email or Profile URL" required>
+                </div>
+                <button type="submit" class="btn-primary" style="padding: 11px 16px;">➕ Add</button>
+              </form>
+
+              <!-- Leads Table -->
+              <div class="crm-table-container">
+                <table class="crm-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Niche</th>
+                      <th>Contact</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="crm-leads-list">
+                    <!-- Filled by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ═══════ POST DETAIL MODAL ═══════ -->
+  <div class="modal-overlay" id="post-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Post Title</h3>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-category" style="margin-bottom: 16px;"></div>
+        <div id="modal-image-container" style="display: none; margin-bottom: 20px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glass); max-height: 250px;">
+          <img id="modal-post-image" src="" alt="Post Image" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="modal-post-content" id="modal-post-content"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" id="modal-edit-btn">✏️ Use as Template</button>
+        <button class="btn-success" id="modal-copy-btn">📋 Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/posts-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
