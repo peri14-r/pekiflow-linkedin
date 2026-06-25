@@ -190,6 +190,11 @@ function renderPosts() {
   container.innerHTML = filtered.map(post => {
     const cat = CATEGORIES[post.category] || {};
     const preview = post.content.substring(0, 180) + '...';
+    const imageHtml = post.image ? `
+      <div style="width: 100%; height: 150px; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-glass); margin-bottom: 12px;">
+        <img src="${post.image}" alt="${post.title}" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    ` : '';
 
     return `
       <div class="post-card" data-post-id="${post.id}">
@@ -201,6 +206,7 @@ function renderPosts() {
         </div>
         <div class="post-card-body" onclick="openPostModal(${post.id})">
           <div class="post-card-title">${post.emoji} ${post.title}</div>
+          ${imageHtml}
           <div class="post-preview">${preview}</div>
         </div>
         <div class="post-card-footer">
