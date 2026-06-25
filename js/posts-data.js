@@ -774,7 +774,9 @@ GPT-4o is still excellent for speed and raw multi-modal image processing, but fo
 
 What model are you using for your coding workflows? 👇
 
-#GenerativeAI #SoftwareDevelopment #ClaudeAI #GPT4`
+#GenerativeAI #SoftwareDevelopment #ClaudeAI #GPT4`,
+    tags: ["claude-3.5", "gpt-4o", "coding"],
+    postType: "text"
   },
   {
     id: 22,
@@ -802,7 +804,9 @@ Chatbots are calculators. Agents are digital employees.
 
 This shift from conversational interfaces to autonomous execution is the real AI wave.
 
-#AIAgents #ArtificialIntelligence #Automation #TechFuture`
+#AIAgents #ArtificialIntelligence #Automation #TechFuture`,
+    tags: ["ai-agents", "chatbots", "tech-explainers"],
+    postType: "text"
   },
   {
     id: 23,
@@ -822,7 +826,9 @@ As a builder, here is how I stay sane and choose what to learn:
 
 The AI wave is a marathon, not a sprint. Don't try to ride every wave—just master the one you are on.
 
-#AICreators #TechMindset #DeveloperLife #Innovation`
+#AICreators #TechMindset #DeveloperLife #Innovation`,
+    tags: ["ai-wave", "builder-mindset", "tech-tips"],
+    postType: "text"
   },
   {
     id: 24,
@@ -843,11 +849,13 @@ Here is the difference and how to use them:
 - The actual task.
 - "Draft a paragraph explaining APIs."
 
-Without a strong system prompt, the AI defaults to its general pre-trained state (which is verbose and generic). Give the AI a clear role, strict instructions on formatting, and watch the output quality double.
+Without a strong system prompt, the AI defaults to its general pre-trained state (which is verbose and generic). Give the AI a role, strict instructions on formatting, and watch the output quality double.
 
 Do you customize your system prompts?
 
-#PromptEngineering #AITooling #SoftwareEngineering #DeveloperTips`
+#PromptEngineering #AITooling #SoftwareEngineering #DeveloperTips`,
+    tags: ["prompts", "developer-tips", "engineering"],
+    postType: "text"
   },
   {
     id: 25,
@@ -871,7 +879,9 @@ Here is my engineering rule of thumb:
 
 Don't code what you can click, but don't click what requires high-performance architecture. 
 
-#SoftwareArchitecture #n8n #Make #WebDevelopment #AIBuilder`
+#SoftwareArchitecture #n8n #Make #WebDevelopment #AIBuilder`,
+    tags: ["make", "n8n", "custom-code"],
+    postType: "text"
   }
 ];
 
