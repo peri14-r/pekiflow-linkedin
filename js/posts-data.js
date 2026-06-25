@@ -1,6 +1,8 @@
 // Pekiflow LinkedIn Post Library
-// AI Automation for Coaches — Bold & Futuristic Tone
+// Bold & Futuristic Tone
 // Structured for Personal (Thought Leader) & Company (Agency) feeds
+// Personal posts target AI, Claude, and general tech builder insights (safe for corporate view)
+// Company posts target Pekiflow agency offers for coaches
 
 const POST_LIBRARY = [
   // ===================== HOOK POSTS =====================
@@ -38,34 +40,34 @@ DM me "AUTOMATE" to see how this works for your coaching business.
   {
     id: 2,
     category: "hook",
-    title: "Coaches Don't Need More Hours",
+    title: "Founders Don't Need More Hours",
     emoji: "🧠",
     target: "personal",
-    content: `Coaches don't need more hours in the day.
+    content: `Founders don't need more hours in the day.
 
 They need better systems.
 
-I've seen coaches:
+I've seen smart operators:
 → Manually sending 50+ follow-up emails per week
-→ Spending 3 hours scheduling calls
+→ Spending 3 hours scheduling booking calls
 → Writing the same onboarding docs over and over
 → Losing leads because they replied too late
 
-The top 1% of coaches? They automated all of this.
+The top 1% of builders? They automated all of this.
 
 Here's the truth no one tells you:
 
-Your coaching skills got you to 6 figures.
+Your raw skills got you to 6 figures.
 But SYSTEMS will get you to 7.
 
-AI isn't replacing coaches.
-It's freeing them to actually COACH.
+AI isn't replacing professionals.
+It's freeing them to actually focus on high-leverage work.
 
-When systems do the admin work, you can focus on what matters.
+When software does the admin work, you can focus on building what matters.
 
 💡 What admin task takes up most of your week? Let me know below.
 
-#CoachLife #AIForCoaches #TechSystems #Automation`,
+#Productivity #Operations #Systems #Automation`,
     tags: ["mindset", "systems", "scaling"],
     postType: "text"
   },
@@ -105,41 +107,41 @@ Comment "READY" and I'll share how. 👇
   {
     id: 4,
     category: "value",
-    title: "5 AI Tools Every Coach Needs",
+    title: "5 AI Tools Every Professional Needs",
     emoji: "🛠️",
     target: "personal",
-    content: `5 AI tools every coach needs in 2026 (most are free):
+    content: `5 AI tools every builder needs in 2026 (most are free):
 
-1. 𝗖𝗵𝗮𝘁𝗚𝗣𝗧 / 𝗖𝗹𝗮𝘂𝗱𝗲 — Create coaching frameworks, email templates, and content in seconds
+1. 𝗖𝗹𝗮𝘂𝗱𝗲 𝟯.𝟱 — The absolute best model for coding, logical reasoning, and drafting templates.
 
-2. 𝗖𝗮𝗹𝗲𝗻𝗱𝗹𝘆 + 𝗔𝗜 — Smart scheduling that eliminates back-and-forth
+2. 𝗠𝗮𝗸𝗲.𝗰𝗼𝗺 / 𝗻𝟴𝗻 — The ultimate visual workflow orchestrators to connect your apps and build custom agents.
 
-3. 𝗠𝗮𝗸𝗲.𝗰𝗼𝗺 / 𝗻𝟴𝗻 — Connect your apps and automate workflows without code
+3. 𝗟𝗼𝗼𝗺 + 𝗔𝗜 — Automatically record walk-throughs and generate summaries and documents.
 
-4. 𝗩𝗮𝗽𝗶 𝗔𝗜 — AI voice agents that answer calls and book appointments 24/7
+4. 𝗩𝗮𝗽𝗶 𝗔𝗜 — Build voice agents that answer calls and book appointments 24/7.
 
-5. 𝗠𝗮𝗻𝘆𝗖𝗵𝗮𝘁 — Instagram & Facebook DM automation for lead capture
+5. 𝗡𝗼𝘁𝗶𝗼𝗻 𝗔𝗜 — Organize your workspace, summarize meeting transcripts, and build templates.
 
-The coaches who adopt these NOW will dominate the next decade.
+The builders who adopt these NOW will dominate the next decade.
 
 The ones who wait? They'll wonder why their competitors are scaling faster.
 
 💡 Save this post for later.
-🔄 Share it with a coach who needs this.
+🔄 Share it with someone who needs this.
 
-#AITools #CoachingTips #Productivity #Automation`,
+#AITools #ProductivityTips #SoftwareEngineering #Automation`,
     tags: ["tools", "tips", "value"],
     postType: "carousel-text"
   },
   {
     id: 5,
     category: "value",
-    title: "Lead Qualification Framework",
+    title: "Lead Qualification Automation",
     emoji: "🎯",
     target: "personal",
-    content: `How to qualify coaching leads on AUTOPILOT using AI:
+    content: `How to qualify inbound leads on AUTOPILOT using AI:
 
-Most coaches waste 60% of their calls on unqualified leads.
+Most businesses waste 60% of their calls on unqualified prospects.
 
 Here is the ideal AI Lead Qualification Framework:
 
@@ -164,7 +166,7 @@ Result: 80% of your calls convert because you're only talking to the RIGHT peopl
 
 Have you tried automating lead intake yet?
 
-#LeadGeneration #AIAutomation #Systems #CoachingBusiness`,
+#LeadGeneration #AIAutomation #Systems #SalesAutomation`,
     tags: ["leads", "framework", "strategy"],
     postType: "text"
   },
@@ -293,29 +295,26 @@ Follow Pekiflow's company page as we share everything.
   {
     id: 9,
     category: "authority",
-    title: "The Future of Coaching is AI-Powered",
+    title: "The Future of Business is AI-Powered",
     emoji: "🔮",
     target: "personal",
     image: "assets/pekiflow_thought_leader.png",
-    content: `Hot take: By 2028, coaches without AI systems will be out of business.
+    content: `Hot take: By 2028, service businesses without automated workflows will struggle to survive.
 
 Here's why:
 
-The coaching industry is projected to hit $30B by 2028.
+The digital services economy is expanding rapidly.
 
-But here's what most people miss:
+But the winners won't be the ones hiring the most headcount.
+They'll be the ones leveraging the smartest infrastructure.
 
-The coaches who will capture that growth aren't the ones working harder.
-They're the ones building SMARTER.
+The AI-powered business of 2028:
+→ AI orchestrators handle calendar booking, invoice processing, and onboarding.
+→ Personalized user journeys run dynamically.
+→ AI analytics monitor data trends and flag anomalies.
+→ Lead generation engines run 24/7 without manual intervention.
 
-The AI-powered coaching business of 2028:
-→ AI handles all admin and scheduling
-→ Personalized client journeys run on autopilot
-→ AI analyzes client progress and suggests interventions
-→ Voice AI handles initial consultations
-→ Lead gen runs 24/7 without you lifting a finger
-
-The coach's role? Pure coaching. Pure transformation.
+The human role? Creative design, strategy, and empathy.
 
 This isn't a prediction. It's already happening.
 
@@ -325,53 +324,53 @@ It's whether you'll be early or late.
 Early = Market leader
 Late = Playing catch-up
 
-What do you think? Is AI an asset or a threat to coaching?
+What do you think? Is AI an asset or a threat to traditional jobs?
 
-#FutureOfCoaching #AI #ThoughtLeadership #Technology`,
+#FutureOfWork #AI #ThoughtLeadership #Technology`,
     tags: ["thought-leadership", "future", "trends"],
     postType: "text"
   },
   {
     id: 10,
     category: "authority",
-    title: "AI Won't Replace Coaches",
+    title: "AI Won't Replace Builders",
     emoji: "🤝",
     target: "personal",
-    content: `"AI will replace coaches."
+    content: `"AI will replace developers and creators."
 
 No, it won't. Here's the truth:
 
-AI will replace coaches who REFUSE to use AI.
+AI will replace professionals who REFUSE to use AI.
 
 There's a massive difference.
 
 Think about it:
 
-Can AI provide empathy? No.
-Can AI hold space for someone? No.
-Can AI challenge beliefs with intuition? No.
-Can AI celebrate your wins with genuine joy? No.
+Can AI provide raw original empathy? No.
+Can AI hold human relationships? No.
+Can AI challenge assumptions with intuition? No.
+Can AI experience genuine creative joy? No.
 
 But can AI:
-→ Send your follow-ups? YES.
-→ Qualify your leads? YES.
-→ Schedule your calls? YES.
-→ Track client progress? YES.
-→ Create your content? YES.
-→ Handle your admin? YES.
+→ Send follow-ups? YES.
+→ Analyze and clean data? YES.
+→ Schedule calls? YES.
+→ Draft layouts? YES.
+→ Test code? YES.
+→ Handle repetitive admin? YES.
 
 The magic happens when you combine:
-🧠 Human coaching brilliance
+🧠 Human strategy and creativity
 ⚡ AI operational efficiency
 
 That's not replacement. That's AMPLIFICATION.
 
-The best coaches aren't anti-AI.
+The best builders in 2026 aren't anti-AI.
 They're AI-augmented.
 
 Agree or disagree? Let's discuss in the comments. 👇
 
-#AIAndHumans #CoachingIndustry #AIAutomation #TechnologyTrends`,
+#AIAndHumans #TechTrends #SoftwareEngineering #Automation`,
     tags: ["thought-leadership", "perspective", "debate"],
     postType: "text"
   },
@@ -380,22 +379,22 @@ Agree or disagree? Let's discuss in the comments. 👇
   {
     id: 11,
     category: "engagement",
-    title: "Which Would You Automate First?",
+    title: "What to Automate First?",
     emoji: "🗳️",
     target: "personal",
-    content: `If you could automate ONE thing in your coaching business tomorrow, what would it be?
+    content: `If you could automate ONE repetitive thing in your daily workflow tomorrow, what would it be?
 
-A) 📧 Email follow-ups and nurture sequences
+A) 📧 Email follow-ups and CRM updates
 B) 📅 Scheduling and calendar management
-C) 🎯 Lead qualification and intake
-D) 📝 Content creation for social media
-E) 📊 Client progress tracking and reporting
+C) 🎯 Inbound lead qualification and scoring
+D) 📝 Content layout draft generation
+E) 📊 System progress reports and monitoring
 
 Drop your letter in the comments! 👇
 
 I'll share a breakdown of the workflow for the most popular answer in my next post.
 
-#CoachingPoll #AIAutomation #Productivity #Systems`,
+#Poll #AIAutomation #Productivity #Systems`,
     tags: ["engagement", "poll", "interactive"],
     postType: "text"
   },
@@ -405,30 +404,30 @@ I'll share a breakdown of the workflow for the most popular answer in my next po
     title: "Unpopular Opinion Thread",
     emoji: "🔥",
     target: "personal",
-    content: `Unpopular opinion: Most coaching programs fail NOT because of bad coaching.
+    content: `Unpopular opinion: Most digital agencies and service businesses fail NOT because of poor skills.
 
-They fail because of bad SYSTEMS.
+They fail because of poor SYSTEMS.
 
 Think about it:
 
-Great coach + No follow-up system = Clients fall off
-Great coach + No onboarding = Clients feel lost
-Great coach + No lead nurture = Empty calendar
-Great coach + No content system = Invisible online
+Great service + No follow-up system = Client drop-offs
+Great service + No onboarding = Confused users
+Great service + No lead nurture = Empty pipelines
+Great service + No content system = Invisible online
 
-You can be the BEST coach in the world.
+You can be the best operator in the world.
 But without systems, nobody will ever know.
 
 The uncomfortable truth?
-Marketing and operations matter as much as coaching skills.
+Systems and operational consistency matter as much as core skills.
 
 The good news?
 AI can handle the operations.
-So you can focus on what you're actually great at.
+So you can focus on building what you're actually great at.
 
 Agree or disagree? Let me know below 👇
 
-#UnpopularOpinion #CoachingBusiness #Systems #Operations`,
+#UnpopularOpinion #BusinessOperations #Systems #Efficiency`,
     tags: ["engagement", "debate", "controversial"],
     postType: "text"
   },
@@ -475,7 +474,7 @@ What does YOUR typical day look like? Share below! 👇
     emoji: "🤖",
     target: "personal",
     image: "assets/pekiflow_ai_agents.png",
-    content: `AI Agents explained in 60 seconds (for coaches who aren't tech-savvy):
+    content: `AI Agents explained in 60 seconds (for people who aren't tech-savvy):
 
 Think of an AI Agent as a virtual employee who:
 → Never sleeps
@@ -484,7 +483,7 @@ Think of an AI Agent as a virtual employee who:
 → Costs a fraction of a human hire
 → Gets better over time
 
-What can an AI Agent actually DO for a coaching business?
+What can an AI Agent actually DO for a business?
 
 📞 Answer calls and book appointments
 💬 Respond to DMs and qualify leads
@@ -503,7 +502,7 @@ That's it. That's what an AI Agent is.
 
 Have you tried using any AI assistants in your workflow yet?
 
-#AIAgents #TechExplainers #AIForCoaches #NoCode`,
+#AIAgents #TechExplainers #AIAutomation #NoCode`,
     tags: ["educational", "beginner", "ai-agents"],
     postType: "text"
   },
@@ -553,11 +552,11 @@ At Pekiflow, we design these exact high-ROI setups.
     title: "Automation vs Delegation",
     emoji: "⚖️",
     target: "personal",
-    content: `Automation vs. Hiring: Which is better for coaches?
+    content: `Automation vs. Hiring: Which is better for scaling operations?
 
-I get this question weekly. Here's my honest answer:
+Here is the breakdown:
 
-𝗛𝗶𝗿𝗶𝗻𝗴 𝗮 𝗩𝗔:
+𝗛𝗶𝗿𝗶𝗻𝗴 a Virtual Assistant (VA):
 ✅ Handles complex, creative tasks
 ✅ Can make judgment calls
 ❌ $1,500 - $3,000/month
@@ -576,7 +575,7 @@ I get this question weekly. Here's my honest answer:
 𝗠𝘆 𝗿𝗲𝗰𝗼𝗺𝗺𝗲𝗻𝗱𝗮𝘁𝗶𝗼𝗻:
 
 If you're under $10K/month → Start with AI automation
-If you're $10K-$30K/month → AI automation + part-time VA
+If you're $10K-$30K/month → AI automation + part-time assistant
 If you're $30K+/month → AI automation + full team
 
 AI handles the 80% that's repetitive.
@@ -636,29 +635,29 @@ DM me "SPOTLIGHT" to learn how we can do the same for you.
   {
     id: 18,
     category: "trends",
-    title: "AI Trends Coaches Must Watch",
+    title: "AI Trends Every Builder Must Watch",
     emoji: "📡",
     target: "personal",
-    content: `5 AI trends that will reshape coaching in 2026-2027:
+    content: `5 AI trends that will reshape business operations in 2026-2027:
 
 1️⃣ 𝗩𝗼𝗶𝗰𝗲 𝗔𝗜 𝗔𝗴𝗲𝗻𝘁𝘀
-Your AI receptionist answers calls, books appointments, and sounds HUMAN. This is live NOW.
+Your AI receptionist answers calls, books appointments, and sounds completely HUMAN.
 
 2️⃣ 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹𝗶𝘇𝗲𝗱 𝗖𝗹𝗶𝗲𝗻𝘁 𝗝𝗼𝘂𝗿𝗻𝗲𝘆𝘀
-AI creates custom learning paths for each client based on their progress, personality, and goals.
+AI creates custom onboarding and education paths dynamically based on user needs.
 
-3️⃣ 𝗔𝗜-𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗖𝗼𝗻𝘁𝗲𝗻𝘁 𝗖𝗿𝗲𝗮𝘁𝗶𝗼𝗻
-Create a week's worth of content in 30 minutes.
+3️⃣ 𝗔𝗜-𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗖𝗼𝗻𝘁𝗲𝗻𝘁 𝗢𝗿𝗰𝗵𝗲𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻
+Create a week's worth of structured, branded materials in 30 minutes.
 
 4️⃣ 𝗣𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝘃𝗲 𝗖𝗹𝗶𝗲𝗻𝘁 𝗔𝗻𝗮𝗹𝘆𝘁𝗶𝗰𝘀
-AI predicts which clients are at risk of dropping off BEFORE they do, so you can intervene early.
+AI predicts user churn or drop-offs before they happen, allowing proactive retention.
 
 5️⃣ 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻
-AI moderates your community, answers FAQs, and keeps engagement high without you being there 24/7.
+AI moderates workspace communities, answers FAQs, and maintains engagement dynamically.
 
-Which trend excites you the most? 
+Which trend are you most excited about?
 
-#AITrends #FutureOfCoaching #Innovation #TechTrends`,
+#AITrends #FutureOfWork #Innovation #TechTrends`,
     tags: ["trends", "future", "predictions"],
     postType: "carousel-text"
   },
@@ -794,7 +793,7 @@ Most people use these terms interchangeably. They shouldn't.
 - If it doesn't know the answer, it hallucinates or stops.
 
 🟢 **An AI Agent (Autonomous)**:
-- You give it a high-level goal (e.g., "Find 10 active coaches and score them").
+- You give it a high-level goal (e.g., "Find 10 active profiles and score them").
 - It designs its own steps to achieve it.
 - It can use tools: browse the web, search files, make API calls, and write code.
 - It loops and corrects its own errors until the task is complete.
@@ -819,7 +818,7 @@ As a builder, here is how I stay sane and choose what to learn:
 
 1️⃣ **Focus on the fundamentals**: Models change, but APIs, databases, vector storage, and prompt structure remain consistent.
 2️⃣ **Build, don't just read**: You learn 10x more by trying to connect an LLM to a database locally than by reading 100 newsletter digests.
-3️⃣ **Pick your stack and master it**: Whether it's Python (LangChain/LlamaIndex) or visual tools (n8n/Make), get good at one before switching.
+3️⃣ **Pick your stack and master it**: Master visual tools (n8n/Make) or custom frameworks before switching around.
 
 The AI wave is a marathon, not a sprint. Don't try to ride every wave—just master the one you are on.
 
@@ -853,7 +852,7 @@ Do you customize your system prompts?
   {
     id: 25,
     category: "value",
-    title: "No-Code (Make/n8n) vs Custom Code for AI",
+    title: "No-Code (Make/n8n) or Custom Code for AI?",
     emoji: "⚙️",
     target: "personal",
     content: `Should you code your AI integrations in Python/Node, or use visual workflow tools like n8n/Make?
@@ -1009,4 +1008,3 @@ Founder, Pekiflow`
     }
   ]
 };
-
