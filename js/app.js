@@ -63,6 +63,10 @@ function renderDashboard() {
   document.getElementById('stat-copied').textContent = copiedCount;
   document.getElementById('stat-categories').textContent = Object.keys(CATEGORIES).length;
 
+  // Update sidebar library badge dynamically
+  const badge = document.querySelector('.nav-badge');
+  if (badge) badge.textContent = POST_LIBRARY.length;
+
   // Render upcoming schedule
   renderUpcomingSchedule();
 }

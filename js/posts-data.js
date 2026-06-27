@@ -882,8 +882,35 @@ Don't code what you can click, but don't click what requires high-performance ar
 #SoftwareArchitecture #n8n #Make #WebDevelopment #AIBuilder`,
     tags: ["make", "n8n", "custom-code"],
     postType: "text"
-  }
 ];
+
+// Dynamically assign images to posts that do not have one defined
+POST_LIBRARY.forEach(post => {
+  if (!post.image) {
+    if (post.id === 2 || post.id === 10 || post.id === 13 || post.id === 24) {
+      post.image = "assets/pekiflow_dev_life.png";
+    } else if (post.id === 4 || post.id === 11 || post.id === 21) {
+      post.image = "assets/pekiflow_ai_tools.png";
+    } else if (post.id === 5 || post.id === 6) {
+      post.image = "assets/pekiflow_leads_crm.png";
+    } else if (post.id === 7 || post.id === 15 || post.id === 17) {
+      post.image = "assets/pekiflow_client_win.png";
+    } else if (post.id === 18 || post.id === 23) {
+      post.image = "assets/pekiflow_ai_trends.png";
+    } else if (post.id === 3 || post.id === 16 || post.id === 25) {
+      post.image = "assets/pekiflow_automation.png";
+    } else if (post.id === 8 || post.id === 20) {
+      post.image = "assets/pekiflow_hero.png";
+    } else if (post.id === 22) {
+      post.image = "assets/pekiflow_ai_agents.png";
+    } else if (post.id === 12) {
+      post.image = "assets/pekiflow_thought_leader.png";
+    } else {
+      post.image = "assets/pekiflow_hero.png";
+    }
+  }
+});
+
 
 // Post categories with metadata
 const CATEGORIES = {
